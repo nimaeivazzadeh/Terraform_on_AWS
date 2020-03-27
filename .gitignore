@@ -4,3 +4,6 @@
 /import/.terraform
 /import/terraform.tfstate
 /import/terraform.tfstate.backup
+/provisioners/.terraform
+/provisioners/terraform.tfstate
+/provisioners/terraform.tfstate.backup
