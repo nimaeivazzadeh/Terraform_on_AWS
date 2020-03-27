@@ -1,3 +1,6 @@
 /eip/.terraform
 /eip/terraform.tfstate
 /eip/terraform.tfstate.backup
+/import/.terraform
+/import/terraform.tfstate
+/import/terraform.tfstate.backup
