@@ -1,4 +1,4 @@
-module "my_vpc_module" {
+module "my_vpc" {
     source = "../modules/network"
     cidr_vpc = "10.0.0.0/16"
     cidr_instance_tenancy = "default"
