@@ -49,7 +49,17 @@ resource "aws_eip" "elastic_ip" {
     vpc  = true
 
     tags = {
-        Name = "elastip_ip"
+        Name = "elastic_ip"
     }
      
+}
+
+resource "aws_nat_gateway" "NAT_Gateway" {
+    allocation_id = "${aws_eip.elastic_ip.id}"
+    subnet_id = "${aws_subnet.public_subnet_A.id}"
+
+    tags = {
+        Name = "NAT_Gateway"
+    }
+    depends_on = ["aws_eip.elastic_ip","aws_subnet.public_subnet_A"]
 }
