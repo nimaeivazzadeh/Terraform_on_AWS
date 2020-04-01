@@ -63,3 +63,4 @@ resource "aws_nat_gateway" "NAT_Gateway" {
     }
     depends_on = ["aws_eip.elastic_ip","aws_subnet.public_subnet_A"]
 }
+

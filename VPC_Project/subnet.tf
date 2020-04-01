@@ -16,7 +16,7 @@ resource "aws_subnet" "private_subnet_A" {
     cidr_block = "10.0.16.0/20"
 
     tags = {
-        Name = "public_subnet_B"
+        Name = "private_subnet_A"
     }
     depends_on = ["aws_vpc.main_vpc"]
 }

@@ -1,2 +1,1 @@
-# How to make a VPC with security groups, internet gateway an elastic IP address on AWS.
-# It has a two subnets.
+# A simple VPC architect with two private and public subnets and a NAT gateway with elastic IP address as well as internet gateway luanched to the internet from AWS       resources.
