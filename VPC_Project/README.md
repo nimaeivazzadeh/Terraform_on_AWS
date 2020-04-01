@@ -1,1 +1,1 @@
-# How to make a VPC with security groups and internet gateway accompanied by en elastiv IP on AWS
+# How to make a VPC with security groups, internet gateway an elastic IP address on AWS.
