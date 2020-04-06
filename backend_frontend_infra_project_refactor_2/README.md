@@ -1,1 +1,1 @@
-# This code is a refactor of its own. This means, we have variable file to hold all values and pass the values through variable's name. This strategy makes code clean and more organize.deploy resources through count and list in Teraform to make code neat and simple
+# Deploy resources through count and list in Teraform to make code neat and simple
