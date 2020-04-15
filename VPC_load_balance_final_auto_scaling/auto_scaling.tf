@@ -33,7 +33,6 @@ resource "aws_autoscaling_group" "worker" {
   target_group_arns         = ["${aws_alb_target_group.alb_front_http.arn}"]
   default_cooldown          = 30
   
-
   lifecycle {
     create_before_destroy   = true
     
