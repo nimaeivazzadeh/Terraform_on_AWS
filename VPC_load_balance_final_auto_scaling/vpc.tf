@@ -14,18 +14,12 @@ resource "aws_security_group" "ec2_public_security_group" {
     vpc_id      = "${aws_vpc.main_vpc.id}" # aligned this security group to the above aws_vpc
 
     ingress    {
-        from_port   = 22
-        to_port     = 22
-        protocol    = "TCP"
-        cidr_blocks = ["0.0.0.0/0"]
-    }
-     ingress    {
         from_port   = 80
         to_port     = 80
         protocol    = "TCP"
-        cidr_blocks = ["0.0.0.0/0"]
+        security_groups = ["${aws_security_group.elb_security_group.id}"]
     }
-
+   
     egress {
         from_port   = 0
         to_port     = 0
@@ -38,7 +32,7 @@ resource "aws_security_group" "ec2_public_security_group" {
         Name = "ec2_public_security_group"
     }
 
-    depends_on = ["aws_vpc.main_vpc"]
+    depends_on = ["aws_vpc.main_vpc", "aws_security_group.elb_security_group"]
 }
 
 resource "aws_security_group" "ec2_private_security_group" {
