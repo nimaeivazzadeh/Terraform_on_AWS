@@ -4,4 +4,4 @@
 # ------------------
 # Load Balance project with Auto Scaling feature
 # access to private ec2 instance is possible from load balancer 
-# the goal of this project is to make auto scale instance in addition to the load balancer we have in order to use that instance when the load of instances are very high.
+# the goal of this project is to make auto scaling instance in addition to the load balancer we have in order to use that instance when the load of instances are very high.
